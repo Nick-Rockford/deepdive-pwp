@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap demo</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="border bg-light border-2 navbar navbar-expand-lg fixed-top">
+	<div class="container-fluid mx-md-3">
+		<a class="navbar-brand text-black-50" href="#">Title</a>
+		<!--I tried EVERYTHING to get the burger to show up. I still don't know why it doesn't show up. this is my workaround. please don't be mad.-->
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+		        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ms-auto">
+				<li class="nav-item">
+					<a class="nav-link active text-black-50" aria-current="page" href="#">Link1</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-black-50" href="#">Link2</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-black-50" href="#">Link3</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-black-50" href="#">Link4</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+<div class="container-fluid my-5 p-4">
+	<img id="jumboBg" class="img-fluid card-img-overlay" src="http://placeimg.com/1000/500/any" alt="background">
+	<div class="card-img-overlay box" id="jumboCardImg">
+		<img src="http://placekitten.com/300/300" alt="meh" id="jumboImg" class="card-img-top rounded-circle">
+		<div class="card-title text">
+			<h1 id="jumboName"><strong>Nick Rockford</strong></h1>
+			<p id="jumboTitles"  class="lead">Web Designer</p>
+		</div>
+	</div>
+</div>
+
+
+<div class="bg-secondary pt-3 pb-5">
+	<div class="container mt-md-5 bg-secondary">
+		<div class="row gy-md-0 my-md-0 my-5 gy-5">
+			<div class="col-md-3 mx-md-auto img-fluid text-center my-md-auto">
+				<img src="./img/broken.jpg" alt="meh" class="img-fluid mx-md-auto">
+			</div>
+			<div class="col-md-9">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto doloremque dolorum, eaque eius
+					eligendi facere facilis, fugit, id laboriosam nostrum nulla obcaecati quae quaerat recusandae soluta suscipit.
+					Blanditiis consequatur impedit necessitatibus numquam odit officia placeat, tempore veniam. Atque blanditiis
+					cum dicta, dignissimos incidunt inventore laudantium quas quibusdam quis vero. Ab, in, similique.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam asperiores at beatae consectetur,
+					dolores enim est eum fugiat id inventore, itaque laborum laudantium magni maiores nam natus neque nisi nostrum
+					numquam obcaecati officiis porro praesentium quae quisquam reprehenderit sint vel veniam voluptate
+					voluptatibus? Quia repellat suscipit totam veniam. Accusantium architecto cum eaque itaque officiis! </p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container mt-md-5 mx-md-auto my-sm-5">
+	<div class="row g-5">
+		<div class="col-md-3 text-center mx-auto mx-md-auto my-sm-5">
+			<img src="./img/broken.jpg" alt="meh" class="img-fluid bg-secondary rounded-circle my-3 p-1">
+			<p class="border rounded bg-secondary text-center p-2">Yellow Archeops Pawniard Rattata Deino Tepig Spinarak. Qui
+				officia deserunt
+				mollit Parasect Electrode Chimecho Musharna sed do eiusmod tempor Sunflora. Fire Sneasel Zubat Fire Red Weavile
+				sunt in culpa qui officia Haunter. Leech Life Mankey Gastrodon Grovyle Rotom Nidoran Fire Red. V for victory
+				Zoroark Storm Badge Beedrill Bulbasaur Moltres Aron.</p>
+		</div>
+		<div class="col-md-3 text-center mx-auto mx-md-auto my-sm-5">
+			<img src="./img/broken.jpg" alt="meh" class="img-fluid bg-secondary rounded-circle my-3 p-1">
+			<p class="border rounded bg-secondary text-center p-2">okem ipsum dolor sit amet Gastly Sunflora Sunflora Jumpluff
+				Sudowoodo
+				Wynaut. Celadon City Muk Nidorino Gulpin gym Stoutland Chikorita. Squirtle Swoobat Magikarp used Splash
+				Farfetch'd Huntail Joltik Tynamo. Meowth, that's right Unfezant Snivy Munchlax Tentacruelt.</p>
+		</div>
+		<div class="col-md-3 text-center mx-auto mx-md-auto my-sm-5">
+			<img src="./img/broken.jpg" alt="meh" class="img-fluid bg-secondary rounded-circle my-3 p-1">
+			<p class="border rounded bg-secondary text-center p-2">Forem ipsum dolor sit amet, uonsectetur udipisicing elit. A
+				nostrum
+				claceat ceiciendis
+				sunt tenetur? Aliquid
+				kmet konsectetur consequuntur aswca ksse mpedit molestias numquam placeat, equae, qui
+				recusandae sint.</p>
+		</div>
+		<div class="col-md-3 text-center mx-auto mx-md-auto my-sm-5">
+			<img src="./img/broken.jpg" alt="meh" class="img-fluid bg-secondary rounded-circle my-3 p-1">
+			<p class="border rounded bg-secondary text-center p-2">Flamethrower Elekid Persian Marill Natu Empoleon Bug. Sonic
+				Boom Whirlipede
+				Alakazam Glalie Tirtouga Carvanha Kadabra. Red Starmie Krokorok Misdreavus Zephyr Badge Deoxys Galvantula. Marsh
+				Badge Hariyama Pinsir you teach me and I'll teach you Rotom Lanturn Stunky. Johto Ground Murkrow Silver Fearow
+				Budew Growlithe.
+			</p>
+		</div>
+	</div>
+</div>
+<div class="bg-dark mt-3 pt-5 pb-4">
+	<div class="container">
+		<div class="row">
+			<p class="text-light text-center">Fumke Thbais Shkait Middle</p>
+		</div>
+	</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+</body>
