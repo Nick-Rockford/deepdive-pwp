@@ -11,7 +11,13 @@
 </head>
 <body>
 
-<nav class="border bg-light border-2 navbar navbar-expand-lg fixed-top">
+<!--This is the navbar, you dont need to touch it right now. it all works, just change links eventually.-->
+<!--TODO I would like to make this navbar reactive, so that when you are at the top of the page, its bigger, and then shrinks when you start scrolling.-->
+
+<span class="position-absolute trigger">
+    <!-- hidden trigger to apply 'stuck' styles -->
+</span>
+<nav class="border bg-light border-2 navbar navbar-expand-lg sticky-top py-3" id="navbar-container">
 	<div class="container-fluid mx-md-3">
 		<a class="navbar-brand text-black-50" href="#">Title</a>
 		<!--I tried EVERYTHING to get the burger to show up. I still don't know why it doesn't show up. this is my workaround. please don't be mad.-->
@@ -38,76 +44,181 @@
 	</div>
 </nav>
 
+<!--profile pic and title-->
 
 <div class="container-fluid my-5 p-4">
-	<img id="jumboBg" class="img-fluid card-img-overlay" src="http://placeimg.com/1000/500/any" alt="background">
-	<div class="card-img-overlay box" id="jumboCardImg">
-		<img src="http://placekitten.com/300/300" alt="meh" id="jumboImg" class="card-img-top rounded-circle">
-		<div class="card-title text">
-			<h1 id="jumboName"><strong>Nick Rockford</strong></h1>
-			<p id="jumboTitles"  class="lead">Web Designer</p>
+	<div class="row">
+		<div class="card-img-overlay jumboBox" id="jumboCardImg">
+			<img src="http://placekitten.com/300/300" alt="meh" id="jumboImg" class="card-img-top rounded-circle">
+			<div id="card-title-box" class="card-title text">
+				<h1 id="jumboName"><strong>Nick Rockford</strong></h1>
+				<p id="jumboTitles" class="lead">Web Designer</p>
+			</div>
 		</div>
 	</div>
 </div>
 
+<!--about me section-->
 
 <div class="bg-secondary pt-3 pb-5">
-	<div class="container mt-md-5 bg-secondary">
-		<div class="row gy-md-0 my-md-0 my-5 gy-5">
-			<div class="col-md-3 mx-md-auto img-fluid text-center my-md-auto">
-				<img src="./img/broken.jpg" alt="meh" class="img-fluid mx-md-auto">
+	<div class="container mt-5 bg-secondary">
+		<div class="row gy-0 my-0 my-5 gy-5">
+			<div class="col-sm-12 col-md-4 border border-dark border-4 bg-light">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi asperiores, error nihil nobis pariatur! Adipisci eligendi ex quidem totam voluptate? Aspernatur aut deserunt ea inventore modi nisi repudiandae, sapiente?
 			</div>
-			<div class="col-md-9">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto doloremque dolorum, eaque eius
-					eligendi facere facilis, fugit, id laboriosam nostrum nulla obcaecati quae quaerat recusandae soluta suscipit.
-					Blanditiis consequatur impedit necessitatibus numquam odit officia placeat, tempore veniam. Atque blanditiis
-					cum dicta, dignissimos incidunt inventore laudantium quas quibusdam quis vero. Ab, in, similique.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam asperiores at beatae consectetur,
-					dolores enim est eum fugiat id inventore, itaque laborum laudantium magni maiores nam natus neque nisi nostrum
-					numquam obcaecati officiis porro praesentium quae quisquam reprehenderit sint vel veniam voluptate
-					voluptatibus? Quia repellat suscipit totam veniam. Accusantium architecto cum eaque itaque officiis! </p>
+			<div class="row col-sm-12 col-md-8">
+				<div class="col-sm-4">
+					<h2 class="text-center p-1">Developer</h2>
+					<img src="http://placekitten.com/300/300" alt="meh" id="aboutme-pic1"
+					     class="container  rounded-circle mw-50">
+				</div>
+				<div class="col-sm-4">
+					<h2 class="text-center p-1">Teacher</h2>
+					<img src="http://placekitten.com/300/300" alt="meh" id="aboutme-pic2"
+					     class="container img-fluid rounded-circle">
+				</div>
+				<div class="col-sm-4">
+					<h2 class="text-center p-1">Maker</h2>
+					<img src="http://placekitten.com/300/300" alt="meh" id="aboutme-pic3"
+					     class="container img-fluid rounded-circle">
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="container mt-md-5 mx-md-auto my-sm-5">
-	<div class="row g-5">
-		<div class="col-md-3 text-center mx-auto mx-md-auto my-sm-5">
-			<img src="./img/broken.jpg" alt="meh" class="img-fluid bg-secondary rounded-circle my-3 p-1">
-			<p class="border rounded bg-secondary text-center p-2">Yellow Archeops Pawniard Rattata Deino Tepig Spinarak. Qui
-				officia deserunt
-				mollit Parasect Electrode Chimecho Musharna sed do eiusmod tempor Sunflora. Fire Sneasel Zubat Fire Red Weavile
-				sunt in culpa qui officia Haunter. Leech Life Mankey Gastrodon Grovyle Rotom Nidoran Fire Red. V for victory
-				Zoroark Storm Badge Beedrill Bulbasaur Moltres Aron.</p>
+<!--Element 1: Developer-->
+
+<div class="bg-info pt-3 pb-5">
+	<div class="container mt-5 ">
+		<div class="row my-5 gy-5">
+			<div class="card-img-overlay box col-md-4 elementBox">
+				<div id="developer-img-box" class="card-title elementTitle">
+					<h1 class="elementFont">Nick Rockford</h1>
+				</div>
+				<img  src="http://placekitten.com/300/300" alt="meh" class="border card-img-top mx-3 elementImg">
+			</div>
+			<div class="col-md-8">
+				<div class="elementText rounded-2 p-2">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores atque cum deleniti ea eius eligendi esse et facere ipsum iure maxime minus nesciunt nihil optio pariatur perferendis perspiciatis, provident quae quaerat quasi sit soluta sunt tenetur velit, voluptas? Aperiam deserunt esse impedit inventore nam nihil quis quod reiciendis?</p>
+				</div>
+
+			</div>
 		</div>
-		<div class="col-md-3 text-center mx-auto mx-md-auto my-sm-5">
-			<img src="./img/broken.jpg" alt="meh" class="img-fluid bg-secondary rounded-circle my-3 p-1">
-			<p class="border rounded bg-secondary text-center p-2">okem ipsum dolor sit amet Gastly Sunflora Sunflora Jumpluff
-				Sudowoodo
-				Wynaut. Celadon City Muk Nidorino Gulpin gym Stoutland Chikorita. Squirtle Swoobat Magikarp used Splash
-				Farfetch'd Huntail Joltik Tynamo. Meowth, that's right Unfezant Snivy Munchlax Tentacruelt.</p>
+	</div>
+	<div class="row row-cols-3 g-4 mx-4">
+		<div class="col">
+			<div class="elementEx">hi</div>
 		</div>
-		<div class="col-md-3 text-center mx-auto mx-md-auto my-sm-5">
-			<img src="./img/broken.jpg" alt="meh" class="img-fluid bg-secondary rounded-circle my-3 p-1">
-			<p class="border rounded bg-secondary text-center p-2">Forem ipsum dolor sit amet, uonsectetur udipisicing elit. A
-				nostrum
-				claceat ceiciendis
-				sunt tenetur? Aliquid
-				kmet konsectetur consequuntur aswca ksse mpedit molestias numquam placeat, equae, qui
-				recusandae sint.</p>
+		<div class="col">
+			<div class="elementEx">as</div>
 		</div>
-		<div class="col-md-3 text-center mx-auto mx-md-auto my-sm-5">
-			<img src="./img/broken.jpg" alt="meh" class="img-fluid bg-secondary rounded-circle my-3 p-1">
-			<p class="border rounded bg-secondary text-center p-2">Flamethrower Elekid Persian Marill Natu Empoleon Bug. Sonic
-				Boom Whirlipede
-				Alakazam Glalie Tirtouga Carvanha Kadabra. Red Starmie Krokorok Misdreavus Zephyr Badge Deoxys Galvantula. Marsh
-				Badge Hariyama Pinsir you teach me and I'll teach you Rotom Lanturn Stunky. Johto Ground Murkrow Silver Fearow
-				Budew Growlithe.
-			</p>
+		<div class="col">
+			<div class="elementEx">as</div>
 		</div>
 	</div>
 </div>
+
+<!--Element 2: Science teacher-->
+
+<div class="bg-success pt-3 pb-5">
+	<div class="container mt-5 ">
+		<div class="row my-5 gy-5">
+			<div class="card-img-overlay box col-md-4 elementBox">
+				<div id="developer-img-box" class="card-title elementTitle">
+					<h1 class="elementFont">Nick Rockford</h1>
+				</div>
+				<img  src="http://placekitten.com/300/300" alt="meh" class="border card-img-top mx-3 elementImg">
+			</div>
+			<div class="col-md-8">
+				<div class="elementText rounded-2 p-2">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores atque cum deleniti ea eius eligendi esse et facere ipsum iure maxime minus nesciunt nihil optio pariatur perferendis perspiciatis, provident quae quaerat quasi sit soluta sunt tenetur velit, voluptas? Aperiam deserunt esse impedit inventore nam nihil quis quod reiciendis?</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="row row-cols-3 g-4 mx-4">
+		<div class="col">
+			<div class="elementEx">hi</div>
+		</div>
+		<div class="col">
+			<div class="elementEx">as</div>
+		</div>
+		<div class="col">
+			<div class="elementEx">as</div>
+		</div>
+	</div>
+</div>
+
+<!--Element 3: Maker-->
+
+<div class="bg-warning pt-3 pb-5">
+	<div class="container mt-5 ">
+		<div class="row my-5 gy-5">
+			<div class="card-img-overlay box col-md-4 elementBox">
+				<div id="developer-img-box" class="card-title elementTitle">
+					<h1 class="elementFont">Nick Rockford</h1>
+				</div>
+				<img  src="http://placekitten.com/300/300" alt="meh" class="border card-img-top mx-3 elementImg">
+			</div>
+			<div class="col-md-8">
+				<div class="elementText rounded-2 p-2">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores atque cum deleniti ea eius eligendi esse et facere ipsum iure maxime minus nesciunt nihil optio pariatur perferendis perspiciatis, provident quae quaerat quasi sit soluta sunt tenetur velit, voluptas? Aperiam deserunt esse impedit inventore nam nihil quis quod reiciendis?</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="row row-cols-3 g-4 mx-4">
+		<div class="col">
+			<div class="elementEx">hi</div>
+		</div>
+		<div class="col">
+			<div class="elementEx">as</div>
+		</div>
+		<div class="col">
+			<div class="elementEx">as</div>
+		</div>
+	</div>
+</div>
+
+<!--this is the contact form-->
+
+
+<section>
+	<div class="container">
+		<div class="form-wrapper">
+			<h2>Contact Form</h2>
+			<form>
+				<div>
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name"/>
+				</div>
+
+				<div>
+					<label for="emailEmail">Email</label>
+					<input type="email" name="email" id="email"/>
+				</div>
+
+				<div>
+					<label for="subject">Subject</label>
+					<input type="text" name="subject" id="subject"/>
+				</div>
+
+				<div>
+					<label for="message">Message</label>
+					<textarea name="message" id="message" cols="30" rows="10" maxlength="1000"
+					          placeholder="1000 characters max"></textarea>
+				</div>
+
+				<button type="reset">Reset</button>
+				<button type="submit">Send</button>
+			</form>
+		</div>
+	</div>
+</section>
+
 <div class="bg-dark mt-3 pt-5 pb-4">
 	<div class="container">
 		<div class="row">
@@ -116,9 +227,30 @@
 	</div>
 </div>
 
+<!--Made by Nick Rockford-->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
+<script src="script.js"></script>
 
 </body>
+<!--TODO-->
+<!--
+----body
+-in 4k, the margins are too big, you need to make it reactive to the larger view screen
+
+----navbar
+
+----banner
+
+----aboutme
+-need a better way to center the cards in about me
+
+----elements
+-elementImg has inline sizing and is not scaling.
+-elementTitle isnt scaling with picture
+
+----contact
+
+-->

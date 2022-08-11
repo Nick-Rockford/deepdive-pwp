@@ -1,16 +1,122 @@
-#jumboCardImg{
-    width: 20vw;
-    padding-left: 3%;
+@media screen and (min-width: 1440px){
+    #jumboCardImg {
+        width: 15vw;
+        padding-left: 3%;
+    }
+
+    #jumboImg {
+        width: 15vw;
+    }
+   #card-title-box{
+       min-height: 90px;
+   }
+    .elementTitle{
+        position: absolute;
+        text-align: center;
+        top: 4%;
+        background: rgba(25, 25, 25, 0.8);
+        font-family: Arial,sans-serif;
+        color: rgba(255, 255, 255, 0.7);
+        width: 22vw;
+
+    }
+
+    .elementImg{
+        width: 20vw;
+    }
+
+    .elementFont {
+        font-size: calc(0.525rem + 2vw);
+        font-weight: bolder;
+    }
 }
 
 
-#jumboImg {
-    width: 20vw;
+@media screen and (min-width: 761px) and (max-width: 1440px) {
+    #jumboCardImg {
+        width: 25vw;
+        padding-left: 3%;
+    }
+
+    #jumboImg {
+        width: 25vw;
+    }
+
+    #jumboTitles {
+        font-size: 1vw;
+    }
+
+    #jumboName {
+        font-size: 2vw;
+        margin: 0;
+    }
+
+    .elementTitle{
+        position: absolute;
+        text-align: center;
+        top: 4%;
+
+        background: rgba(25, 25, 25, 0.8);
+        font-family: Arial,sans-serif;
+        color: rgba(255, 255, 255, 0.7);
+        width: 22vw;
+
+    }
+
+    .elementImg{
+        width: 20vw;
+    }
+    .elementFont{
+        font-size: calc(0.525rem + 2vw);
+        font-weight: bolder;
+    }
 }
-.box {
+
+
+
+
+@media screen and (min-width: 481px)  (max-width: 760px) {
+    #jumboCardImg {
+        width: 25vw;
+        padding-left: 3%;
+    }
+
+    #jumboImg {
+        width: 25vw;
+    }
+    .elementTitle{
+        position: absolute;
+        text-align: center;
+        top: 4%;
+
+        background: rgba(25, 25, 25, 0.8);
+        font-family: Arial,sans-serif;
+        color: rgba(255, 255, 255, 0.7);
+        width: 15vw;
+
+    }
+
+    .elementImg{
+        width: 16vw;
+    }
+    .elementFont{
+        font-size: calc(0.525rem + 2vw);
+        font-weight: bolder;
+}
+}
+
+@media screen and (max-width: 480px){
+    #aboutme-pic1, #aboutme-pic2, #aboutme-pic3{
+        max-width: 50%;
+    }
+}
+
+/*If its dependant on size, put it up there!*/
+
+.jumboBox {
     position: relative;
 }
-.box .text {
+.text {
     position: absolute;
     text-align: left;
     bottom: 0;
@@ -22,16 +128,34 @@
     height: 20%;
     padding-left: 10%;
 }
-#jumboTitles{
-    font-size: 1vw;
+/*this is the elements from my life*/
+
+.elementBox{
+    position: relative;
+}
+.elementText{
+
+    min-height: 20vmax;
+    border: .5em solid black;
+    margin: 2em 0em;
+    background-color: #FFFFFF;
+}
+.elementEx{
+    border: .2em solid black;
+    background-color: #FFFFFF;
+
 }
 
-#jumboName{
-    font-size: 2vw;
-    margin: 0;
-}
 
-#jumboBg{
-    width: 100%;
-    height: ;
+
+.stuck .navbar.sticky-top {
+    background-color: #f6f7f9 !important;
+    padding-top: .2rem !important;
+    padding-bottom: .2rem !important;
+}
+.sticky-top {
+    transition: all 0.25s ease-in;
+}
+body{
+    background-color: bisque;
 }
