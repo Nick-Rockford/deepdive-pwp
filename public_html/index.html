@@ -10,13 +10,12 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <!--This is the navbar, you dont need to touch it right now. it all works, just change links eventually.-->
 <!--TODO I would like to make this navbar reactive, so that when you are at the top of the page, its bigger, and then shrinks when you start scrolling.-->
-
-<span class="position-absolute trigger">
+<span class="position-relative trigger">
     <!-- hidden trigger to apply 'stuck' styles -->
 </span>
+
 <nav class="border bg-light border-2 navbar navbar-expand-lg sticky-top py-3" id="navbar-container">
 	<div class="container-fluid mx-md-3">
 		<a class="navbar-brand text-black-50" href="#">Title</a>
@@ -27,18 +26,24 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ms-auto">
+				<div class="vr navbar-lines"></div>
 				<li class="nav-item">
-					<a class="nav-link active text-black-50" aria-current="page" href="#">Link1</a>
+					<a class="nav-link active text-black-50" aria-current="page" href="#">LinkdIn</a>
+					<img src="" alt="">
 				</li>
+				<div class="vr navbar-lines"></div>
 				<li class="nav-item">
 					<a class="nav-link text-black-50" href="#">Link2</a>
 				</li>
+				<div class="vr navbar-lines"></div>
 				<li class="nav-item">
 					<a class="nav-link text-black-50" href="#">Link3</a>
 				</li>
+				<div class="vr navbar-lines"></div>
 				<li class="nav-item">
-					<a class="nav-link text-black-50" href="#">Link4</a>
+					<a class="nav-link text-black-50" href="#contactModal">Link4</a>
 				</li>
+				<div class="vr navbar-lines"></div>
 			</ul>
 		</div>
 	</div>
@@ -49,7 +54,7 @@
 <div class="container-fluid my-5 p-4">
 	<div class="row">
 		<div class="card-img-overlay jumboBox" id="jumboCardImg">
-			<img src="http://placekitten.com/300/300" alt="meh" id="jumboImg" class="card-img-top rounded-circle">
+			<img src="https://placekitten.com/300/300" alt="meh" id="jumboImg" class="card-img-top rounded-circle">
 			<div id="card-title-box" class="card-title text">
 				<h1 id="jumboName"><strong>Nick Rockford</strong></h1>
 				<p id="jumboTitles" class="lead">Web Designer</p>
@@ -62,25 +67,27 @@
 
 <div class="bg-secondary pt-3 pb-5">
 	<div class="container mt-5 bg-secondary">
-		<div class="row gy-0 my-0 my-5 gy-5">
-			<div class="col-sm-12 col-md-4 border border-dark border-4 bg-light">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi asperiores, error nihil nobis pariatur! Adipisci eligendi ex quidem totam voluptate? Aspernatur aut deserunt ea inventore modi nisi repudiandae, sapiente?
+		<div class="row gy-0 my-0 my-5 gy-5 justify-content-center">
+			<div class="col-11 col-sm-12 col-lg-4 border border-dark border-4 bg-light">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi asperiores, error nihil nobis
+				pariatur! Adipisci eligendi ex quidem totam voluptate? Aspernatur aut deserunt ea inventore modi nisi
+				repudiandae, sapiente?
 			</div>
-			<div class="row col-sm-12 col-md-8">
-				<div class="col-sm-4">
-					<h2 class="text-center p-1">Developer</h2>
-					<img src="http://placekitten.com/300/300" alt="meh" id="aboutme-pic1"
-					     class="container  rounded-circle mw-50">
+			<div class="row col-12 col-lg-8">
+				<div class="col-sm-4 text-center aboutCards">
+					<h2 class="p-1 aboutMeImgText">Developer</h2>
+					<img src="https://placekitten.com/300/300" alt="meh"
+					     class=" img-fluid rounded-circle aboutImgs">
 				</div>
-				<div class="col-sm-4">
-					<h2 class="text-center p-1">Teacher</h2>
-					<img src="http://placekitten.com/300/300" alt="meh" id="aboutme-pic2"
-					     class="container img-fluid rounded-circle">
+				<div class="col-sm-4 text-center aboutCards">
+					<h2 class="p-1 aboutMeImgText">Teacher</h2>
+					<img src="https://placekitten.com/300/300" alt="meh"
+					     class="img-fluid rounded-circle aboutImgs">
 				</div>
-				<div class="col-sm-4">
-					<h2 class="text-center p-1">Maker</h2>
-					<img src="http://placekitten.com/300/300" alt="meh" id="aboutme-pic3"
-					     class="container img-fluid rounded-circle">
+				<div class="col-sm-4 text-center aboutCards">
+					<h2 class="p-1 aboutMeImgText">Maker</h2>
+					<img src="https://placekitten.com/300/300" alt="meh"
+					     class="img-fluid rounded-circle aboutImgs">
 				</div>
 			</div>
 		</div>
@@ -91,22 +98,25 @@
 
 <div class="bg-info pt-3 pb-5">
 	<div class="container mt-5 ">
-		<div class="row my-5 gy-5">
-			<div class="card-img-overlay box col-md-4 elementBox">
-				<div id="developer-img-box" class="card-title elementTitle">
-					<h1 class="elementFont">Nick Rockford</h1>
+		<div class="flex-column flex-md-row my-5 gy-5 d-flex justify-content-around ">
+			<div class="col-md-4 text-center elementBox position-relative">
+				<div class="card-title elementTitle">
+					<h1 class="elementFont text-center">Nick Rockford</h1>
 				</div>
-				<img  src="http://placekitten.com/300/300" alt="meh" class="border card-img-top mx-3 elementImg">
+				<img src="https://placekitten.com/300/300" alt="meh" class="border img-fluid elementImg">
 			</div>
-			<div class="col-md-8">
-				<div class="elementText rounded-2 p-2">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores atque cum deleniti ea eius eligendi esse et facere ipsum iure maxime minus nesciunt nihil optio pariatur perferendis perspiciatis, provident quae quaerat quasi sit soluta sunt tenetur velit, voluptas? Aperiam deserunt esse impedit inventore nam nihil quis quod reiciendis?</p>
+			<div class="col-md-8 elementTextLeft d-flex align-items-center group">
+				<div class="elementText rounded-2 p-2 bg-light ">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores atque cum deleniti ea
+						eius eligendi esse et facere ipsum iure maxime minus nesciunt nihil optio pariatur perferendis perspiciatis,
+						provident quae quaerat quasi sit soluta sunt tenetur velit, voluptas? Aperiam deserunt esse impedit
+						inventore nam nihil quis quod reiciendis?</p>
 				</div>
 
 			</div>
 		</div>
 	</div>
-	<div class="row row-cols-3 g-4 mx-4">
+	<div class="row d-flex flex-column flex-md-row g-4 mx-4">
 		<div class="col">
 			<div class="elementEx">hi</div>
 		</div>
@@ -120,25 +130,27 @@
 </div>
 
 <!--Element 2: Science teacher-->
-
-<div class="bg-success pt-3 pb-5">
+<div class="bg-warning pt-3 pb-5">
 	<div class="container mt-5 ">
-		<div class="row my-5 gy-5">
-			<div class="card-img-overlay box col-md-4 elementBox">
-				<div id="developer-img-box" class="card-title elementTitle">
-					<h1 class="elementFont">Nick Rockford</h1>
+		<div class="flex-column flex-md-row-reverse my-5 gy-5 d-flex justify-content-around ">
+			<div class="col-md-4 text-center elementBox position-relative">
+				<div class="card-title elementTitle">
+					<h1 class="elementFont text-center">Nick Rockford</h1>
 				</div>
-				<img  src="http://placekitten.com/300/300" alt="meh" class="border card-img-top mx-3 elementImg">
+				<img src="https://placekitten.com/300/300" alt="meh" class="border img-fluid elementImg">
 			</div>
-			<div class="col-md-8">
-				<div class="elementText rounded-2 p-2">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores atque cum deleniti ea eius eligendi esse et facere ipsum iure maxime minus nesciunt nihil optio pariatur perferendis perspiciatis, provident quae quaerat quasi sit soluta sunt tenetur velit, voluptas? Aperiam deserunt esse impedit inventore nam nihil quis quod reiciendis?</p>
+			<div class="col-md-8 elementTextLeft d-flex align-items-center group">
+				<div class="elementText rounded-2 p-2 bg-light ">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores atque cum deleniti ea
+						eius eligendi esse et facere ipsum iure maxime minus nesciunt nihil optio pariatur perferendis perspiciatis,
+						provident quae quaerat quasi sit soluta sunt tenetur velit, voluptas? Aperiam deserunt esse impedit
+						inventore nam nihil quis quod reiciendis?</p>
 				</div>
 
 			</div>
 		</div>
 	</div>
-	<div class="row row-cols-3 g-4 mx-4">
+	<div class="row d-flex flex-column flex-md-row g-4 mx-4">
 		<div class="col">
 			<div class="elementEx">hi</div>
 		</div>
@@ -152,25 +164,27 @@
 </div>
 
 <!--Element 3: Maker-->
-
-<div class="bg-warning pt-3 pb-5">
+<div class="bg-success pt-3 pb-5">
 	<div class="container mt-5 ">
-		<div class="row my-5 gy-5">
-			<div class="card-img-overlay box col-md-4 elementBox">
-				<div id="developer-img-box" class="card-title elementTitle">
-					<h1 class="elementFont">Nick Rockford</h1>
+		<div class="flex-column flex-md-row my-5 gy-5 d-flex justify-content-around">
+			<div class="col-md-4 text-center elementBox position-relative">
+				<div class="elementTitle">
+					<h1 class="elementFont text-center">Nick Rockford</h1>
 				</div>
-				<img  src="http://placekitten.com/300/300" alt="meh" class="border card-img-top mx-3 elementImg">
+				<img src="https://placekitten.com/300/300" alt="meh" class="border img-fluid elementImg">
 			</div>
-			<div class="col-md-8">
-				<div class="elementText rounded-2 p-2">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores atque cum deleniti ea eius eligendi esse et facere ipsum iure maxime minus nesciunt nihil optio pariatur perferendis perspiciatis, provident quae quaerat quasi sit soluta sunt tenetur velit, voluptas? Aperiam deserunt esse impedit inventore nam nihil quis quod reiciendis?</p>
+			<div class="col-md-8 elementTextLeft d-flex align-items-center group">
+				<div class="elementText rounded-2 p-2 bg-light ">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores atque cum deleniti ea
+						eius eligendi esse et facere ipsum iure maxime minus nesciunt nihil optio pariatur perferendis perspiciatis,
+						provident quae quaerat quasi sit soluta sunt tenetur velit, voluptas? Aperiam deserunt esse impedit
+						inventore nam nihil quis quod reiciendis?</p>
 				</div>
 
 			</div>
 		</div>
 	</div>
-	<div class="row row-cols-3 g-4 mx-4">
+	<div class="row d-flex flex-column flex-md-row g-4 mx-4">
 		<div class="col">
 			<div class="elementEx">hi</div>
 		</div>
@@ -185,44 +199,74 @@
 
 <!--this is the contact form-->
 
+<!-- Button trigger modal -->
 
-<section>
-	<div class="container">
-		<div class="form-wrapper">
-			<h2>Contact Form</h2>
-			<form>
-				<div>
-					<label for="name">Name</label>
-					<input type="text" name="name" id="name"/>
-				</div>
+<div class="container my-5">
+	<div class="row">
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+			Contact Form
+		</button>
+	</div>
+</div>
 
-				<div>
-					<label for="emailEmail">Email</label>
-					<input type="email" name="email" id="email"/>
-				</div>
+<!--Modal contact form-->
+<div class="modal fade" id="contactModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="contactModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="modal-title" id="exampleModalLabel">Contact Form</h3>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<section>
+					<div class='container-fluid'>
+						<div class='form-wrapper '>
+							<form action="http://137.184.190.162/apis/" id="form" method="post" novalidate>
+								<div class="py-1">
+									<label class="col-3 text-center" for="formName">Name</label>
+									<input class="col-8" type="text" name="formName" id="formName" placeholder="Your Name"/>
+								</div>
 
-				<div>
-					<label for="subject">Subject</label>
-					<input type="text" name="subject" id="subject"/>
-				</div>
+								<div class="py-1">
+									<label class="col-3 text-center" for="formEmail">Email</label>
+									<input class="col-8" type="email" name="formEmail" id="formEmail" placeholder="Your Email"/>
+								</div>
 
-				<div>
-					<label for="message">Message</label>
-					<textarea name="message" id="message" cols="30" rows="10" maxlength="1000"
-					          placeholder="1000 characters max"></textarea>
-				</div>
+								<div class="py-1">
+									<label class="col-3 text-center" for="formSubject">Subject</label>
+									<input class="col-8" type="text" name="formSubject" id="formSubject" placeholder="How can I help?"/>
+								</div>
 
-				<button type="reset">Reset</button>
-				<button type="submit">Send</button>
-			</form>
+								<div class="py-2">
+									<label class="col-3 align-top text-center" for="formMessage">Message</label>
+									<textarea class="col-8" name="formMessage" id="formMessage" cols="30" rows="10" maxlength="1000"
+									          placeholder="1000 characters max"></textarea>
+								</div>
+
+
+								<div class="g-recaptcha" data-sitekey="6Lfc23ohAAAAAJ-iR8-LbtI_u5fHG6wLInow_RhS"></div>
+							</form>
+						</div>
+					</div>
+					<div id='output-area'></div>
+				</section>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button form="form" class="btn btn-danger" type="reset">Reset</button>
+				<button form="form" type="submit" class="btn btn-primary">Send</button>
+			</div>
+
 		</div>
 	</div>
-</section>
+</div>
+
 
 <div class="bg-dark mt-3 pt-5 pb-4">
 	<div class="container">
 		<div class="row">
-			<p class="text-light text-center">Fumke Thbais Shkait Middle</p>
+			<p class="text-light text-center">This site created by Wrathma Technologies</p>
 		</div>
 	</div>
 </div>
@@ -234,12 +278,23 @@
         crossorigin="anonymous"></script>
 <script src="script.js"></script>
 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script crossorigin="anonymous" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-F6h55Qw6sweK+t7SiOJX+2bpSAa3b/fnlrVCJvmEj1A="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-0Yg/eibVdKyxkuVo1Qwh0DspoUCHvSbm/oOoYVz32BQ="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+
+<script src="./js/script.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 </body>
 <!--TODO-->
 <!--
 ----body
--in 4k, the margins are too big, you need to make it reactive to the larger view screen
-
+-Make sure the site looks correct in mobile and on 4k monitors.
+-needs a background, either a static image with paralax or put in one that has math attached to animation
 ----navbar
 
 ----banner
