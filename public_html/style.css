@@ -529,6 +529,7 @@
 
 .stuck .navbar.sticky-top {
     background-color: #f6f7f9 !important;
+    opacity: 85%;
     padding-top: .2rem !important;
     padding-bottom: .2rem !important;
 }
@@ -539,4 +540,13 @@
 
 body {
     background-color: bisque;
+}
+.logo{
+    max-width: 2rem;
+}
+.headline{
+    font-size: 2rem;
+}
+.elementLogo{
+    max-width: 1.5rem;
 }

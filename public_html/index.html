@@ -18,8 +18,7 @@
 
 <nav class="border bg-light border-2 navbar navbar-expand-lg sticky-top py-3" id="navbar-container">
 	<div class="container-fluid mx-md-3">
-		<a class="navbar-brand text-black-50" href="#">Title</a>
-		<!--I tried EVERYTHING to get the burger to show up. I still don't know why it doesn't show up. this is my workaround. please don't be mad.-->
+		<a class="navbar-brand text-black-75 fw-bolder headline" href="#">Wrathma Technologies</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 		        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -28,20 +27,34 @@
 			<ul class="navbar-nav ms-auto">
 				<div class="vr navbar-lines"></div>
 				<li class="nav-item">
-					<a class="nav-link active text-black-50" aria-current="page" href="#">LinkdIn</a>
-					<img src="" alt="">
+					<a class="nav-link active text-black-50" target="_blank" aria-current="page"
+					   href="https://www.linkedin.com/in/nick-rockford/"><img class="logo"
+					                                                          src="./Images/LinkedIn_icon_circle.svg.png"
+					                                                          alt="LinkedIn logo"> LinkdIn</a>
+
 				</li>
 				<div class="vr navbar-lines"></div>
 				<li class="nav-item">
-					<a class="nav-link text-black-50" href="#">Link2</a>
+					<a class="nav-link text-black-50" target="_blank" href="https://github.com/Nick-Rockford"><img class="logo"
+					                                                                                               src="Images/github+icon.png"
+					                                                                                               alt="Github logo">
+						Github</a>
+
 				</li>
 				<div class="vr navbar-lines"></div>
 				<li class="nav-item">
-					<a class="nav-link text-black-50" href="#">Link3</a>
+					<a class="nav-link text-black-50" target="_blank" href="Images/nick-rockford-updated-resume.pdf"><img
+									class="logo"
+									src="Images/resume-icon-237618.png"
+									alt="Resume icon">
+						Resume</a>
+
 				</li>
 				<div class="vr navbar-lines"></div>
 				<li class="nav-item">
-					<a class="nav-link text-black-50" href="#contactModal">Link4</a>
+					<a class="nav-link text-black-50" type="button" data-bs-toggle="modal" data-bs-target="#contactModal"><img
+									class="logo" src="Images/email.png" alt="Email Icon"> Contact</a>
+
 				</li>
 				<div class="vr navbar-lines"></div>
 			</ul>
@@ -64,16 +77,23 @@
 </div>
 
 <!--about me section-->
-
 <div class="bg-secondary pt-3 pb-5">
 	<div class="container mt-5 bg-secondary">
-		<div class="row gy-0 my-0 my-5 gy-5 justify-content-center">
+		<h2>About me</h2>
+		<div class="row gy-0 my-0 my-3 gy-5 justify-content-center">
 			<div class="col-11 col-sm-12 col-lg-4 border border-dark border-4 bg-light">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi asperiores, error nihil nobis
-				pariatur! Adipisci eligendi ex quidem totam voluptate? Aspernatur aut deserunt ea inventore modi nisi
-				repudiandae, sapiente?
+				<p class="my-3 ">"In short, in matters vegetable, animal, and mineral
+					I am the very model of a modern Major-General"</p>
+				<footer class="blockquote-footer">Major General Stanley, <cite title="Source Title"> The Pirates of
+					Penzance.</cite></footer>
+				<hr>
+				<p class="fs-4">Welcome</p>
+				<p class="aboutMeText fs-5"> I am an experienced professional with a long history of inquiry and exploration. I
+					take great pride in being a scholar of every field of study. Presented here is a sample of my larger body of
+					work over the last 15 years in areas that are most important to me.</p>
+				<p>Thank you.</p>
 			</div>
-			<div class="row col-12 col-lg-8">
+			<div class="row col-12 col-lg-8 align-items-center">
 				<div class="col-sm-4 text-center aboutCards">
 					<h2 class="p-1 aboutMeImgText">Developer</h2>
 					<img src="https://placekitten.com/300/300" alt="meh"
@@ -101,33 +121,229 @@
 		<div class="flex-column flex-md-row my-5 gy-5 d-flex justify-content-around ">
 			<div class="col-md-4 text-center elementBox position-relative">
 				<div class="card-title elementTitle">
-					<h1 class="elementFont text-center">Nick Rockford</h1>
+					<h2 class="elementFont text-center">Developer</h2>
 				</div>
 				<img src="https://placekitten.com/300/300" alt="meh" class="border img-fluid elementImg">
 			</div>
 			<div class="col-md-8 elementTextLeft d-flex align-items-center group">
-				<div class="elementText rounded-2 p-2 bg-light ">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores atque cum deleniti ea
-						eius eligendi esse et facere ipsum iure maxime minus nesciunt nihil optio pariatur perferendis perspiciatis,
-						provident quae quaerat quasi sit soluta sunt tenetur velit, voluptas? Aperiam deserunt esse impedit
-						inventore nam nihil quis quod reiciendis?</p>
+				<div class="elementText rounded-2 p-2 bg-light fs-5">
+					<p>This area of work is my shortest in a professional sense. But from a very young age, I have always had a
+						fascination with technology. Learning coding through Deep Dive Full Stack web development has been a dream
+						come true, and my only regret is not taking it sooner.</p>
+					<p>I have experience building with:</p>
+					<ul>
+						<li>Front: HTML, CSS, JavaScript, Bootstrap, Jquery</li>
+						<li>Back: Postgres, Java, Express, Node.js, TypeScript</li>
+						<li>Utilities: Multiple Ides, insomnia, Docker, Command Line, Git,</li>
+					</ul>
 				</div>
 
 			</div>
 		</div>
 	</div>
+	<h3 class="text-center">Projects</h3>
 	<div class="row d-flex flex-column flex-md-row g-4 mx-4">
 		<div class="col">
-			<div class="elementEx">hi</div>
+			<h4 class="text-center">Event Listeners</h4>
+			<div type="button" class="elementEx container-fluid" data-bs-toggle="modal" data-bs-target="#devModalOne">hi</div>
 		</div>
 		<div class="col">
-			<div class="elementEx">as</div>
+			<h4 class="text-center">My pwp</h4>
+			<div type="button" class="elementEx container-fluid" data-bs-toggle="modal" data-bs-target="#devModalTwo">hi</div>
 		</div>
 		<div class="col">
+			<h4 class="text-center">ABQ Brew Crew</h4>
 			<div class="elementEx">as</div>
 		</div>
 	</div>
 </div>
+
+<!--developer modal one-->
+<div class="modal fade" id="devModalOne" data-bs-keyboard="false" tabindex="-1" aria-labelledby="devModalOneLabel"
+     aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-xl">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title fs-1" id="devModalOneLabel">My pwp</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body container-fluid">
+				<div class="row">
+					<div class="col-sm-8 border">
+						<div class="row">
+							<div class="col-8 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+							<div class="col-4 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-8 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+							<div class="col-4 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 d-flex align-items-center group">
+						<div class="elementText rounded-2 p-2 bg-light fs-5">
+							<p>This is the first project I ever worked on. A simple design, just figuring out how different event
+								listeners functioned.</p>
+							<p>If I had a chance to do it over again, I would have just completed the hardest ones and moved on, but
+								I'm grateful for the practice and experience.</p>
+							<p>Skills for this project</p>
+							<ul class="fs-6">
+								<li>Bootstrap</li>
+								<li>JavaScript</li>
+								<li>Regex</li>
+								<li>Fetching from an API</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+				<a href="https://ddc-web-student.cnm.edu/~nwoffard/javascript-events/" target="_blank" class="btn btn-primary">See
+					the website</a>
+				<a href="https://github.com/dd-fullstack-cohort-39/javascript-events-challenge-Nick-Rockford" target="_blank"
+				   class="btn btn-secondary"><img class="elementLogo"
+				                                  src="Images/github+icon.png"
+				                                  alt="Github logo"> Github</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--end of modal-->
+
+<!--developer modal two-->
+<div class="modal fade" id="devModalTwo" data-bs-keyboard="false" tabindex="-1" aria-labelledby="devModalTwoLabel"
+     aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-xl">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title fs-1" id="devModalTwoLabel">My pwp</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body container-fluid">
+				<div class="row">
+					<div class="col-sm-6 border">
+						<div class="row">
+							<div class="col-8 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+							<div class="col-4 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-8 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+							<div class="col-4 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 d-flex align-items-center group">
+						<div class="elementText rounded-2 p-2 bg-light fs-5">
+							<p>My personal Webpage. This project was a challenge for me. I struggle with Front end Design and this was
+								almost entirely Front end. </p>
+							<p>My greatest hurdle was in prioritizing what to work on first. I decided to focus on the basic layout
+								and screen reactivity before filling in content. This proved to be the right way to do it because once I
+								finished the layout it was simple to add text and pictures, but it was also stressful because I couldn't
+								see the progress I was making. </p>
+							<p>If I were to do this again, I would have laid out a timeline on top of my list of objectives. that way,
+								I could better see how much time each part of the project was taking me. </p>
+							<p>Skills for this project</p>
+							<ul class="fs-6">
+								<li>Bootstrap for layout</li>
+								<li>Css for where bootstrap fell short</li>
+								<li>Express for handling contact form integration with mailgun</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+				<a href="https://wrathma.tech" target="_blank" class="btn btn-primary">See
+					the website</a>
+				<a href="https://github.com/Nick-Rockford/deepdive-pwp" target="_blank"
+				   class="btn btn-secondary"><img class="elementLogo"
+				                                  src="Images/github+icon.png"
+				                                  alt="Github logo"> Github</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--end of modal-->
+
+<!--developer modal three-->
+<div class="modal fade" id="devModalThree" data-bs-keyboard="false" tabindex="-1" aria-labelledby="devModalThreeLabel"
+     aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-xl">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title fs-1" id="devModalThreeLabel">My pwp</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body container-fluid">
+				<div class="row">
+					<div class="col-sm-6 border">
+						<div class="row">
+							<div class="col-8 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+							<div class="col-4 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-8 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+							<div class="col-4 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 d-flex align-items-center group">
+						<div class="elementText rounded-2 p-2 bg-light fs-5">
+							<p>My personal Webpage. This project was a challenge for me. I struggle with Front end Design and this was
+								almost entirely Front end. </p>
+							<p>My greatest hurdle was in prioritizing what to work on first. I decided to focus on the basic layout
+								and screen reactivity before filling in content. This proved to be the right way to do it because once I
+								finished the layout it was simple to add text and pictures, but it was also stressful because I couldn't
+								see the progress I was making. </p>
+							<p>If I were to do this again, I would have laid out a timeline on top of my list of objectives. that way,
+								I could better see how much time each part of the project was taking me. </p>
+							<p>Skills for this project</p>
+							<ul class="fs-6">
+								<li>Bootstrap for layout</li>
+								<li>Css for where bootstrap fell short</li>
+								<li>Express for handling contact form integration with mailgun</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+				<a href="https://wrathma.tech" target="_blank" class="btn btn-primary">See
+					the website</a>
+				<a href="https://github.com/Nick-Rockford/deepdive-pwp" target="_blank"
+				   class="btn btn-secondary"><img class="elementLogo"
+				                                  src="Images/github+icon.png"
+				                                  alt="Github logo"> Github</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--end of modal-->
+
 
 <!--Element 2: Science teacher-->
 <div class="bg-warning pt-3 pb-5">
