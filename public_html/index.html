@@ -18,7 +18,7 @@
 
 <nav class="border bg-light border-2 navbar navbar-expand-lg sticky-top py-3" id="navbar-container">
 	<div class="container-fluid mx-md-3">
-		<a class="navbar-brand text-black-75 fw-bolder headline" href="#">Wrathma Technologies</a>
+		<a class="navbar-brand fw-bolder headline fs-3" href="#">Wrathma Technologies</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 		        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -67,7 +67,7 @@
 <div class="container-fluid my-5 p-4">
 	<div class="row">
 		<div class="card-img-overlay jumboBox" id="jumboCardImg">
-			<img src="https://placekitten.com/300/300" alt="meh" id="jumboImg" class="card-img-top rounded-circle">
+			<img src="./Images/my-picture.jpg" alt="meh" id="jumboImg" class="card-img-top rounded-circle">
 			<div id="card-title-box" class="card-title text">
 				<h1 id="jumboName"><strong>Nick Rockford</strong></h1>
 				<p id="jumboTitles" class="lead">Web Designer</p>
@@ -96,17 +96,17 @@
 			<div class="row col-12 col-lg-8 align-items-center">
 				<div class="col-sm-4 text-center aboutCards">
 					<h2 class="p-1 aboutMeImgText">Developer</h2>
-					<img src="https://placekitten.com/300/300" alt="meh"
+					<img src="./Images/coding.jpeg" alt="meh"
 					     class=" img-fluid rounded-circle aboutImgs">
 				</div>
 				<div class="col-sm-4 text-center aboutCards">
 					<h2 class="p-1 aboutMeImgText">Teacher</h2>
-					<img src="https://placekitten.com/300/300" alt="meh"
+					<img src="./Images/teacher.jpg" alt="meh"
 					     class="img-fluid rounded-circle aboutImgs">
 				</div>
 				<div class="col-sm-4 text-center aboutCards">
 					<h2 class="p-1 aboutMeImgText">Maker</h2>
-					<img src="https://placekitten.com/300/300" alt="meh"
+					<img src="./Images/maker.jpg" alt="meh"
 					     class="img-fluid rounded-circle aboutImgs">
 				</div>
 			</div>
@@ -123,7 +123,7 @@
 				<div class="card-title elementTitle">
 					<h2 class="elementFont text-center">Developer</h2>
 				</div>
-				<img src="https://placekitten.com/300/300" alt="meh" class="border img-fluid elementImg">
+				<img src="./Images/developer-pic.jpg" alt="meh" class="border img-fluid elementImg">
 			</div>
 			<div class="col-md-8 elementTextLeft d-flex align-items-center group">
 				<div class="elementText rounded-2 p-2 bg-light fs-5">
@@ -153,7 +153,8 @@
 		</div>
 		<div class="col">
 			<h4 class="text-center">ABQ Brew Crew</h4>
-			<div class="elementEx">as</div>
+			<div type="button" class="elementEx container-fluid" data-bs-toggle="modal" data-bs-target="#devModalThree">hi
+			</div>
 		</div>
 	</div>
 </div>
@@ -249,7 +250,8 @@
 					</div>
 					<div class="col-sm-6 d-flex align-items-center group">
 						<div class="elementText rounded-2 p-2 bg-light fs-5">
-							<p>My personal Webpage. This project was a challenge for me. I struggle with Front end Design and this was
+							<p>A Portfolio of the projects that define me. This project was a challenge for me. I struggle with Front
+								end Design and this was
 								almost entirely Front end. </p>
 							<p>My greatest hurdle was in prioritizing what to work on first. I decided to focus on the basic layout
 								and screen reactivity before filling in content. This proved to be the right way to do it because once I
@@ -287,7 +289,7 @@
 	<div class="modal-dialog modal-dialog-centered modal-xl">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title fs-1" id="devModalThreeLabel">My pwp</h5>
+				<h5 class="modal-title fs-1" id="devModalThreeLabel">ABQ Brew Crew</h5>
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body container-fluid">
@@ -312,19 +314,21 @@
 					</div>
 					<div class="col-sm-6 d-flex align-items-center group">
 						<div class="elementText rounded-2 p-2 bg-light fs-5">
-							<p>My personal Webpage. This project was a challenge for me. I struggle with Front end Design and this was
-								almost entirely Front end. </p>
-							<p>My greatest hurdle was in prioritizing what to work on first. I decided to focus on the basic layout
-								and screen reactivity before filling in content. This proved to be the right way to do it because once I
-								finished the layout it was simple to add text and pictures, but it was also stressful because I couldn't
-								see the progress I was making. </p>
-							<p>If I were to do this again, I would have laid out a timeline on top of my list of objectives. that way,
-								I could better see how much time each part of the project was taking me. </p>
+							<p>This is my team's Capstone project for the bootcamp. A social media site for letting your friends know
+								what brewery you're at and keeping track of the ones you've been to</p>
+							<p>I worked with a team of two other people from concept to the launch of the site. I took the lead on
+								organizing the Postgres database and wiring up the express routes for interacting with it. While this
+								project is currently a work in progress, I'm still very proud of the work we have done.</p>
+							<p>My biggest hurdle in this project is managing scope. a social media site like this has so much
+								potential in what it can do, but considering we are going from concept to launch in about 8 weeks while
+								also working on other projects and attending class, our actual time to complete this is rapidly
+								shrinking </p>
 							<p>Skills for this project</p>
 							<ul class="fs-6">
-								<li>Bootstrap for layout</li>
-								<li>Css for where bootstrap fell short</li>
-								<li>Express for handling contact form integration with mailgun</li>
+
+								<li>making ERDs and persona to drive user experience</li>
+								<li>Express for handling database routes</li>
+								<li>Git for version control when working with a team</li>
 							</ul>
 						</div>
 					</div>
@@ -334,7 +338,7 @@
 				<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
 				<a href="https://wrathma.tech" target="_blank" class="btn btn-primary">See
 					the website</a>
-				<a href="https://github.com/Nick-Rockford/deepdive-pwp" target="_blank"
+				<a href="https://github.com/brewery-101/brewer-101" target="_blank"
 				   class="btn btn-secondary"><img class="elementLogo"
 				                                  src="Images/github+icon.png"
 				                                  alt="Github logo"> Github</a>
@@ -348,70 +352,360 @@
 <!--Element 2: Science teacher-->
 <div class="bg-warning pt-3 pb-5">
 	<div class="container mt-5 ">
-		<div class="flex-column flex-md-row-reverse my-5 gy-5 d-flex justify-content-around ">
+		<div class="align-items-center flex-column flex-md-row-reverse my-5 gy-5 d-flex justify-content-around ">
 			<div class="col-md-4 text-center elementBox position-relative">
-				<div class="card-title elementTitle">
-					<h1 class="elementFont text-center">Nick Rockford</h1>
-				</div>
-				<img src="https://placekitten.com/300/300" alt="meh" class="border img-fluid elementImg">
+					<div class="card-title elementTitle">
+						<h1 class="elementFont text-center">Teacher</h1>
+					</div>
+					<img src="./Images/teaching-stuff.jpg" alt="meh" class="border img-fluid elementImg">
 			</div>
-			<div class="col-md-8 elementTextLeft d-flex align-items-center group">
-				<div class="elementText rounded-2 p-2 bg-light ">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores atque cum deleniti ea
-						eius eligendi esse et facere ipsum iure maxime minus nesciunt nihil optio pariatur perferendis perspiciatis,
-						provident quae quaerat quasi sit soluta sunt tenetur velit, voluptas? Aperiam deserunt esse impedit
-						inventore nam nihil quis quod reiciendis?</p>
+			<div class="col-md-8 elementTextLeft d-flex group">
+				<div class="elementText rounded-2 p-2 bg-light fs-5">
+					<p>For 5 years, I worked as a life science teacher at the middle school level. During that time, I met some
+						incredible people and made a difference in my community. I cultivated a reputation as the crazy, eccentric,
+						mad scientist in order to draw my students in.</p>
+					<p>Here are a few of my accomplishments:</p>
+					<ul>
+						<li>Designed and ran an interactive lab for each unit</li>
+						<li>Wrote successful educational grants totalling $1000 for my classroom and department</li>
+						<li>Ran the most successful after school club at my school, teaching students technical reading skills
+							through playing a card game.
+						</li>
+						<li>Introduced dissections to my department and ran Professional development on how to perform them.
+						<li>Taught online during the pandemic after building a digital curriculum from scratch</li>
+					</ul>
 				</div>
 
 			</div>
 		</div>
 	</div>
+	<h3 class="text-center">Projects</h3>
 	<div class="row d-flex flex-column flex-md-row g-4 mx-4">
 		<div class="col">
-			<div class="elementEx">hi</div>
+			<h4 class="text-center">Frog Dissection</h4>
+			<div type="button" class="elementEx container-fluid" data-bs-toggle="modal" data-bs-target="#teacherModalOne">hi</div>
 		</div>
 		<div class="col">
-			<div class="elementEx">as</div>
-		</div>
-		<div class="col">
-			<div class="elementEx">as</div>
+			<h4 class="text-center">Magic Club</h4>
+			<div type="button" class="elementEx container-fluid" data-bs-toggle="modal" data-bs-target="#teacherModalTwo">Magic Club</div>
 		</div>
 	</div>
 </div>
+
+
+<!--teacher modal one-->
+<div class="modal fade" id="teacherModalOne" data-bs-keyboard="false" tabindex="-1" aria-labelledby="teacherModalOneLabel"
+     aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-xl">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title fs-1" id="teacherModalOneLabel">Frog dissections</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body container-fluid">
+				<div class="row">
+					<div class="col-sm-6 border">
+						<div class="row">
+							<div class="col-8 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+							<div class="col-4 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-8 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+							<div class="col-4 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 d-flex align-items-center group">
+						<div class="elementText rounded-2 p-2 bg-light fs-5">
+							<p>My original major was nursing, but when that didn't pan out, I switched to education. no point in letting those higher level biology courses go to waste, so I used what I learned.  </p>
+							<p>I was the first teacher to bring dissections to the school, and it was always the end of year activity to really hammer home everything we had been learning up to that point.</p>
+							<p>Uses for this project</p>
+							<ul class="fs-6">
+								<li>This activity brings the concepts of biology to the real world for students</li>
+								<li>Its a great end of year goal to keep lab safety fresh "If I can't trust you with an X how will I trust you with a scalpel?"</li>
+								<li>For 99% of those students, it will be a fun memory from middle school science</li>
+								<li>For 1% of students it will be the first step in a long pursuit of learning more about the world around them.</li>
+								<li>Two former students credit that lab as the reason they signed up for nursing classes.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--end of modal-->
+
+<!--teacher modal two-->
+<div class="modal fade" id="teacherModalTwo" data-bs-keyboard="false" tabindex="-1" aria-labelledby="teacherModalTwoLabel"
+     aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-xl">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title fs-1" id="teacherModalTwoLabel">Magic Club</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body container-fluid">
+				<div class="row">
+					<div class="col-sm-6 border">
+						<div class="row">
+							<div class="col-8 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+							<div class="col-4 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-8 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+							<div class="col-4 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 d-flex align-items-center group">
+						<div class="elementText rounded-2 p-2 bg-light fs-5">
+							<p>A club focused on learning the card game "Magic the gathering"</p>
+							<p>One area that students struggle in is reading informational texts. This club not only gets my students reading to understand how a card works, but it also means they have to think about the logic of how this card interacts with the logic of the rules.</p>
+							<p>here are my accomplishments</p>
+							<ul class="fs-6">
+								<li>Magic club was the most popular club at the school with over 35 students attending every week</li>
+								<li>We led a successful campaign to raise funds for the club and were awarded $700 to prepare for a tournament</li>
+								<li>Several members of our club have gone on to form a magic club at the high school once they leave our school</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--end of modal-->
+
 
 <!--Element 3: Maker-->
 <div class="bg-success pt-3 pb-5">
 	<div class="container mt-5 ">
-		<div class="flex-column flex-md-row my-5 gy-5 d-flex justify-content-around">
+		<div class="align-items-center flex-column flex-md-row my-5 gy-5 d-flex justify-content-around">
 			<div class="col-md-4 text-center elementBox position-relative">
 				<div class="elementTitle">
-					<h1 class="elementFont text-center">Nick Rockford</h1>
+					<h1 class="elementFont text-center">Maker</h1>
 				</div>
-				<img src="https://placekitten.com/300/300" alt="meh" class="border img-fluid elementImg">
+				<img src="" alt="meh" class="border img-fluid elementImg">
 			</div>
 			<div class="col-md-8 elementTextLeft d-flex align-items-center group">
-				<div class="elementText rounded-2 p-2 bg-light ">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores atque cum deleniti ea
-						eius eligendi esse et facere ipsum iure maxime minus nesciunt nihil optio pariatur perferendis perspiciatis,
-						provident quae quaerat quasi sit soluta sunt tenetur velit, voluptas? Aperiam deserunt esse impedit
-						inventore nam nihil quis quod reiciendis?</p>
+				<div class="elementText rounded-2 p-2 bg-light fs-5 ">
+					<p>I have always wanted to know how things worked, and that has led me into many areas of study, but making things is the evolution of that. Doing something with that knowledge. </p>
+					<p>Theres something about taking a concept from design to product that just feels good. you can take pride in your craft and enjoy the little details that other people may not notice, but you could tell stories about them how difficult they were, or how creative you were to solve that problem.</p>
+					<p>Here is a sample of the things I make</p>
+					<ul>
+						<li>Cooking</li>
+						<li>Woodworking</li>
+						<li>Model making</li>
+						<li>Cosplay</li>
+						<li>Electronics</li>
+						<li>Chemistry</li>
+						<li>Building Computers</li>
+						<li>Gardening</li>
+					</ul>
 				</div>
 
 			</div>
 		</div>
 	</div>
+	<h3 class="text-center">Projects</h3>
 	<div class="row d-flex flex-column flex-md-row g-4 mx-4">
 		<div class="col">
-			<div class="elementEx">hi</div>
+			<h4 class="text-center">Woodworking</h4>
+			<div type="button" class="elementEx container-fluid" data-bs-toggle="modal" data-bs-target="#makerModalOne">hi</div>
 		</div>
 		<div class="col">
-			<div class="elementEx">as</div>
+			<h4 class="text-center">Cosplay</h4>
+			<div type="button" class="elementEx container-fluid" data-bs-toggle="modal" data-bs-target="#makerModalTwo">hi</div>
 		</div>
 		<div class="col">
-			<div class="elementEx">as</div>
+			<h4 class="text-center">Cooking</h4>
+			<div type="button" class="elementEx container-fluid" data-bs-toggle="modal" data-bs-target="#makerModalThree">hi</div>
 		</div>
 	</div>
 </div>
+
+<!--maker modal one-->
+<div class="modal fade" id="makerModalOne" data-bs-keyboard="false" tabindex="-1" aria-labelledby="makerModalOneLabel"
+     aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-xl">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title fs-1" id="makerModalOneLabel">Woodworking</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body container-fluid">
+				<div class="row">
+					<div class="col-sm-6 border">
+						<div class="row">
+							<div class="col-8 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+							<div class="col-4 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-8 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+							<div class="col-4 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 d-flex align-items-center group">
+						<div class="elementText rounded-2 p-2 bg-light fs-5">
+							<p>When my wife and I bought our first house, My first workshop came with it.</p>
+							<p>So many times, my wife has shown me something on amazon or etsy and I have said "I could make that", so now is my opportunity to put my money where my mouth is! The biggest take away from wood working is seeing just how bad I am at estimating. I need to double my budget, double my time allotment, and cut half my features if I want to finish something in a timely manner. </p>
+							<p>Here are my completed projects so far</p>
+							<ul class="fs-6">
+								<li>Risers for my wife's teacup collection</li>
+								<li>Picture frames for her earrings</li>
+								<li>A cedar shelf with hooks for my wife's necklaces</li>
+								<li>A kitchen island restoration</li>
+								<li>A sunshade for my wife's garden</li>
+								</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--end of modal-->
+
+<!--maker modal two-->
+<div class="modal fade" id="makerModalTwo" data-bs-keyboard="false" tabindex="-1" aria-labelledby="makerModalTwoLabel"
+     aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-xl">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title fs-1" id="makerModalTwoLabel">Cosplay</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body container-fluid">
+				<div class="row">
+					<div class="col-sm-6 border">
+						<div class="row">
+							<div class="col-8 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+							<div class="col-4 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-8 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+							<div class="col-4 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 d-flex align-items-center group">
+						<div class="elementText rounded-2 p-2 bg-light fs-5">
+							<p>a hobby I am very much looking forward to taking back up now that the pandemic is over is costume making, or cosplay</p>
+							<p>For about 3 years before covid, I was part of a costume making group that would create group themed costumes and travel to different comic conventions all over the country.</p>
+							<p>By far my best work to date has been my X-mens "Juggernaught" costume. Its made of eva foam and held together with contact cement. my favorite feature on it are the rivets, which are made with googley eyes painted brass (and filled with glue to prevent rattling).</p>
+							<p>Our group has cosplayed</p>
+							<ul class="fs-6">
+								<li>1960s Batman and Villains (my wife and I were G.O.O.N.s)</li>
+								<li>X-men and Villains. Our best costumes to date.</li>
+								<li>Disney Starwars. Disney characters in a Starwars theme</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--end of modal-->
+
+<!--maker modal three-->
+<div class="modal fade" id="makerModalThree" data-bs-keyboard="false" tabindex="-1" aria-labelledby="makerModalthreeLabel"
+     aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-xl">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title fs-1" id="makerModalThreeLabel">Cooking</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body container-fluid">
+				<div class="row">
+					<div class="col-sm-6 border">
+						<div class="row">
+							<div class="col-8 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+							<div class="col-4 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-8 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+							<div class="col-4 col-sm-6 border">
+								<img class="img-fluid" src="https://via.placeholder.com/250" alt="placeholder">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 d-flex align-items-center group">
+						<div class="elementText rounded-2 p-2 bg-light fs-5">
+							<p>Everyone has to eat, might as well eat good food.</p>
+							<p>As a young starving collage student, I figured out that it was immensely cheaper and healthier to make your own food than it is to eat out all the time. trouble is, I like eating good food.</p>
+							<p>That's where my love of cooking started. I have steadily built up a list of staple meals and treats that keep my wife and I happy and full!</p>
+							<p>Here are my best dishes</p>
+							<ul class="fs-6">
+								<li>Grilled Fajitas (chicken, bell peppers, red onion, and green chile made on a wood fire grill)</li>
+								<li>Oven street tacos (chicken, queso fresco, adobo aoli, cabbage, pico de gallo)</li>
+								<li>Jesters stew (Green chile, potatoes, peas, mushrooms, and chicken in an irish broth)</li>
+								<li>Pandemic chili (all shelf stable ingredients with fresh honey cornbread)</li>
+								</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--end of modal-->
+
+
+
+
 
 <!--this is the contact form-->
 
@@ -506,22 +800,4 @@
 <script src="./js/script.js"></script>
 <script src="https://www.google.com/recaptcha/api.js"></script>
 </body>
-<!--TODO-->
-<!--
-----body
--Make sure the site looks correct in mobile and on 4k monitors.
--needs a background, either a static image with paralax or put in one that has math attached to animation
-----navbar
 
-----banner
-
-----aboutme
--need a better way to center the cards in about me
-
-----elements
--elementImg has inline sizing and is not scaling.
--elementTitle isnt scaling with picture
-
-----contact
-
--->

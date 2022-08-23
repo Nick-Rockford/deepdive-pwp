@@ -80,7 +80,9 @@
         background-color: #FFFFFF;
     }*/
     .elementImg {
-        width: calc(100% - 100px);
+        width: calc(13rem + 100px);
+        height: calc(13rem + 100px);
+        object-fit: cover;
     }
     .elementTitle {
         position: absolute;
@@ -486,6 +488,8 @@
 
     .aboutImgs {
         width: 100%;
+        min-width: 100%;
+        height: 100%;
     }
 
     .elementTitle {
@@ -549,4 +553,9 @@ body {
 }
 .elementLogo{
     max-width: 1.5rem;
+}
+.aboutImgs{
+    object-fit: cover;
+    height: 14vw;
+    width: 14vw;
 }
