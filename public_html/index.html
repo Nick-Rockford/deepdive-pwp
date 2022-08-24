@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Bootstrap demo</title>
+	<title>Welcome to my Portfolio!</title>
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
 	      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -67,7 +67,7 @@
 <div class="container-fluid my-5 p-4">
 	<div class="row">
 		<div class="card-img-overlay jumboBox" id="jumboCardImg">
-			<img src="./Images/my-picture.jpg" alt="meh" id="jumboImg" class="card-img-top rounded-circle">
+			<img src="./Images/my-picture.jpg" alt="A picture of a man smiling" id="jumboImg" class="card-img-top rounded-circle">
 			<div id="card-title-box" class="card-title text">
 				<h1 id="jumboName"><strong>Nick Rockford</strong></h1>
 				<p id="jumboTitles" class="lead">Web Designer</p>
@@ -77,9 +77,8 @@
 </div>
 
 <!--about me section-->
-<div class="bg-secondary pt-3 pb-5">
-	<div class="container mt-5 bg-secondary">
-		<h2>About me</h2>
+<div class="bg-about pt-3 pb-5">
+	<div class="container mt-5 bg-about">
 		<div class="row gy-0 my-0 my-3 gy-5 justify-content-center">
 			<div class="col-11 col-sm-12 col-xl-4 border border-dark border-4 bg-light">
 				<p class="my-3 ">"In short, in matters vegetable, animal, and mineral
@@ -92,22 +91,29 @@
 					take great pride in being a scholar of every field of study. Presented here is a sample of my larger body of
 					work over the last 15 years in areas that are most important to me.</p>
 				<p>Thank you.</p>
+				<div id="elementDev"></div>
 			</div>
 			<div class="row col-12 col-xl-8 align-items-center">
 				<div class="col-sm-4 text-center aboutCards">
 					<h2 class="p-1 aboutMeImgText">Developer</h2>
-					<img src="./Images/coding.jpeg" alt="meh"
+					<a class="btn" href="#elementDev">
+					<img src="./Images/coding.jpeg" alt="a computer screen with code on it"
 					     class=" img-fluid rounded-circle aboutImgs">
+					</a>
 				</div>
 				<div class="col-sm-4 text-center aboutCards">
 					<h2 class="p-1 aboutMeImgText">Teacher</h2>
-					<img src="./Images/teaching-stuff.jpg" alt="meh"
+					<a class="btn" href="#elementTeacher">
+					<img src="./Images/teaching-stuff.jpg" alt="a picture of a man holding a bubble full of smoke"
 					     class="img-fluid rounded-circle aboutImgs">
+					</a>
 				</div>
 				<div class="col-sm-4 text-center aboutCards">
 					<h2 class="p-1 aboutMeImgText">Maker</h2>
-					<img src="./Images/maker.jpg" alt="meh"
+					<a class="btn" href="#elementMaker">
+					<img src="./Images/maker.jpg" alt="a picture of a man building a shelf with two cats watching him"
 					     class="img-fluid rounded-circle aboutImgs">
+				</a>
 				</div>
 			</div>
 		</div>
@@ -115,14 +121,14 @@
 </div>
 
 <!--Element 1: Developer-->
-<div class="bg-info pt-3 pb-5">
+<div class="bg-dev pt-3 pb-5">
 	<div class="container mt-5 ">
 		<div class="align-items-center flex-column flex-lg-row my-5 gy-5 d-flex justify-content-around ">
 			<div class="col-lg-4 col-md-8 pb-lg-0 pb-3 text-center elementBox position-relative">
 				<div class="card-title elementTitle">
 					<h2 class="elementFont text-center">Developer</h2>
 				</div>
-				<img src="./Images/developer-pic.jpg" alt="meh" class="border img-fluid elementImg">
+				<img src="./Images/developer-pic.jpg" alt="a Computer screen with code on it" class="border img-fluid elementImg">
 			</div>
 			<div class="col-lg-8 elementTextLeft d-flex align-items-center group">
 				<div class="elementText rounded-2 p-2 bg-light fs-5">
@@ -150,6 +156,7 @@
 		</div>
 		<div class="col">
 			<div type="button" class="elementEx container-fluid text-center" data-bs-toggle="modal" data-bs-target="#devModalThree"><h4>ABQ Brew Crew</h4></div>
+			<div id="elementTeacher"> </div>
 		</div>
 	</div>
 </div>
@@ -167,7 +174,7 @@
 				<div class="row">
 					<div class="col-xl-8 border">
 							<div class="border border-2 align-items-center">
-								<img class="img-fluid" src="./Images/events-listener.png" alt="placeholder">
+								<img class="img-fluid" src="./Images/events-listener.png" alt="a picture of a website with the code for it in the foreground">
 						</div>
 					</div>
 					<div class="col-xl-4 d-flex align-items-center group">
@@ -215,7 +222,7 @@
 					<div class="col-xl-6 border">
 						<div class="row">
 							<div class="border border-2 align-items-center">
-								<img class="img-fluid" src="./Images/my-pwp.png" alt="placeholder">
+								<img class="img-fluid" src="./Images/my-pwp.png" alt="a picture of this exact website">
 							</div>
 						</div>
 					</div>
@@ -268,10 +275,10 @@
 					<div class="col-xl-6 border">
 						<div class="row">
 							<div class="border border-2 align-items-center">
-								<img class="img-fluid" src="./Images/current-capstone.png" alt="placeholder">
+								<img class="img-fluid" src="./Images/current-capstone.png" alt="a photo of code">
 							</div>
 							<div class="border border-2 align-items-center">
-								<img class="img-fluid" src="./Images/roadmap.png" alt="placeholder">
+								<img class="img-fluid" src="./Images/roadmap.png" alt="a photo of our work in progress on a website">
 							</div>
 						</div>
 					</div>
@@ -305,6 +312,7 @@
 				   class="btn btn-secondary"><img class="elementLogo"
 				                                  src="Images/github+icon.png"
 				                                  alt="Github logo"> Github</a>
+
 			</div>
 		</div>
 	</div>
@@ -313,14 +321,14 @@
 
 
 <!--Element 2: Science teacher-->
-<div class="bg-warning pt-3 pb-5">
+<div  class="bg-teacher pt-3 pb-5">
 	<div class="container mt-5 ">
 		<div class="align-items-center flex-column flex-lg-row-reverse my-5 gy-5 d-flex justify-content-around">
 			<div class="col-lg-4 col-md-8 pb-lg-0 pb-3 text-center elementBox position-relative">
 					<div class="card-title elementTitle">
 						<h1 class="elementFont text-center">Teacher</h1>
 					</div>
-					<img src="./Images/classroom.jpg" alt="meh" class="border img-fluid elementImg">
+					<img src="./Images/classroom.jpg" alt="an empty classroom full of desks with chairs on them" class="border img-fluid elementImg">
 			</div>
 			<div class="col-lg-8 elementTextLeft d-flex group">
 				<div class="elementText rounded-2 p-2 bg-light fs-5">
@@ -349,6 +357,7 @@
 		</div>
 		<div class="col">
 			<div type="button" class="elementEx container-fluid text-center" data-bs-toggle="modal" data-bs-target="#teacherModalTwo"><h4>Magic Club</h4></div>
+			<div id="elementMaker"></div>
 		</div>
 	</div>
 </div>
@@ -368,7 +377,7 @@
 					<div class="col-xl-6 border">
 						<div class="row">
 							<div class="border border-2 align-items-center">
-								<img class="img-fluid" src="./Images/frog-diagram.png" alt="placeholder">
+								<img class="img-fluid" src="./Images/frog-diagram.png" alt="an anatomical drawing of a frog being dissected">
 							</div>
 						</div>
 					</div>
@@ -410,7 +419,7 @@
 					<div class="col-xl-6 border">
 						<div class="row">
 							<div class="border border-2 align-items-center">
-								<img class="img-fluid" src="./Images/magic-club.jpg" alt="placeholder">
+								<img class="img-fluid" src="./Images/magic-club.jpg" alt="a picture of a man and two youth playing a card game.">
 							</div>
 						</div>
 					</div>
@@ -438,14 +447,14 @@
 
 
 <!--Element 3: Maker-->
-<div class="bg-success pt-3 pb-5">
+<div class="bg-maker pt-3 pb-5">
 	<div class="container mt-5 ">
 		<div class="align-items-center flex-column flex-lg-row my-5 gy-5 d-flex justify-content-around">
 			<div class="col-lg-4 col-md-8 pb-lg-0 pb-3 text-center elementBox position-relative">
 				<div class="elementTitle">
 					<h1 class="elementFont text-center">Maker</h1>
 				</div>
-				<img src="./Images/shelf.jpg" alt="meh" class="border img-fluid elementImg">
+				<img src="./Images/shelf.jpg" alt="a set of steps in a cabinet with many mugs on each level " class="border img-fluid elementImg">
 			</div>
 			<div class="col-lg-8 elementTextLeft d-flex align-items-center group">
 				<div class="elementText rounded-2 p-2 bg-light fs-5 ">
@@ -495,18 +504,18 @@
 					<div class="col-xl-6 border">
 						<div class="row">
 							<div class=" col-lg-6 border">
-								<img class="img-fluid" src="./Images/sunshade.jpg" alt="placeholder">
+								<img class="img-fluid" src="./Images/sunshade.jpg" alt="a tall garden sunshade">
 							</div>
 							<div class=" col-lg-6 border">
-								<img class="img-fluid" src="./Images/cedar-shelf.jpg" alt="placeholder">
+								<img class="img-fluid" src="./Images/cedar-shelf.jpg" alt="a wooden shelf with metal hooks in it in a row">
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-lg-6 border">
-								<img class="img-fluid" src="./Images/island.jpg" alt="placeholder">
+								<img class="img-fluid" src="./Images/island.jpg" alt="a kitchen island that has been resurfaced with a fresh coat of paint.">
 							</div>
 							<div class="col-lg-6 border">
-								<img class="img-fluid" src="./Images/earrings.jpg" alt="placeholder">
+								<img class="img-fluid" src="./Images/earrings.jpg" alt="a picture frame with the center being mesh with several earrings hanging from it">
 							</div>
 						</div>
 					</div>
@@ -547,7 +556,7 @@
 				<div class="row">
 					<div class="col-xl-6 border">
 						<div class="row align-items-center">
-								<img class="img-fluid" src="./Images/cosplay.jpg" alt="placeholder">
+								<img class="img-fluid" src="./Images/cosplay.jpg" alt="a man in a costume that resembles the xmen's juggernaut">
 						</div>
 					</div>
 					<div class="col-xl-6 d-flex align-items-center group">
@@ -574,7 +583,7 @@
 <!--end of modal-->
 
 <!--maker modal three-->
-<div class="modal fade" id="makerModalThree" data-bs-keyboard="false" tabindex="-1" aria-labelledby="makerModalthreeLabel"
+<div class="modal fade" id="makerModalThree" data-bs-keyboard="false" tabindex="-1" aria-labelledby="makerModalThreeLabel"
      aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered modal-xl">
 		<div class="modal-content">
@@ -587,18 +596,18 @@
 					<div class="col-xl-6 border">
 						<div class="row">
 							<div class="col-xl-6 border">
-								<img class="img-fluid" src="./Images/thanksgiving.jpg" alt="placeholder">
+								<img class="img-fluid" src="./Images/thanksgiving.jpg" alt="a dinner setting for two at a table with candles">
 							</div>
 							<div class="col-xl-6 border">
-								<img class="img-fluid" src="./Images/chicken-mushroom.jpg" alt="placeholder">
+								<img class="img-fluid" src="./Images/chicken-mushroom.jpg" alt="A dinner with chicken and mushrooms">
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-xl-6 border">
-								<img class="img-fluid" src="./Images/cod.jpg" alt="placeholder">
+								<img class="img-fluid" src="./Images/cod.jpg" alt="a dinner with cod, asparagus and potatoes">
 							</div>
 							<div class="col-xl-6 border">
-								<img class="img-fluid" src="./Images/caprese.jpg" alt="placeholder">
+								<img class="img-fluid" src="./Images/caprese.jpg" alt="a plate of food with chicken and caprese salad">
 							</div>
 						</div>
 					</div>
@@ -648,11 +657,12 @@
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h3 class="modal-title" id="exampleModalLabel">Contact Form</h3>
+				<h3 class="modal-title" id="contactModalLabel">Contact Form</h3>
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
 				<section>
+					<h4>How can I help?</h4>
 					<div class='container-fluid'>
 						<div class='form-wrapper '>
 							<form action="apis/" id="form" method="post" novalidate>

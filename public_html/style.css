@@ -412,5 +412,16 @@ body {
 .elementLogo {
     max-width: 1.5rem;
 }
+.bg-dev{
+    background-color: #fc5f3c;
+}
+.bg-about{
+    background-color: #51625d;
+}
+.bg-teacher{
+    background-color: #979665;
+}
 
-
+.bg-maker{
+    background-color: #cbaa7a;
+}
