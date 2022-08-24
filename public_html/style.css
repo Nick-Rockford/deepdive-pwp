@@ -17,6 +17,7 @@
         font-size: 2vw;
         margin: 0;
     }
+
     .text {
         position: absolute;
         text-align: left;
@@ -29,7 +30,8 @@
         height: 20%;
         padding-left: 10%;
     }
-    .aboutMeImgText{
+
+    .aboutMeImgText {
         margin: auto;
         translate: 0 90%;
         background: rgba(25, 25, 25, 0.8);
@@ -39,51 +41,24 @@
         font-size: 2vw;
 
     }
+
     .elementFont {
         font-size: calc(0.525rem + 2rem);
         font-weight: bolder;
     }
 
-
-/*
-    .elementTwoImg{
-        width: calc(100% - 100px);
+    .aboutImgs {
+        object-fit: cover;
+        height: 15rem;
+        width: 15rem;
     }
 
-
-
-
-    .middleElementRight {
-        translate: 215%;
-    }
-
-    .middleElementLeft {
-        translate: -50%;
-    }
-
-    .elementFontTwo {
-        translate: 0;
-        font-size: calc(0.525rem + 2vw);
-        font-weight: bolder;
-    }
-
-    .elementBox {
-        position: relative;
-        padding-top: 2vw;
-    }
-
-    .elementText {
-
-        min-height: calc(100% - 50px);
-        border: .5em solid black;
-        margin: 2em 0;
-        background-color: #FFFFFF;
-    }*/
     .elementImg {
         width: calc(13rem + 100px);
         height: calc(13rem + 100px);
         object-fit: cover;
     }
+
     .elementTitle {
         position: absolute;
         text-align: center;
@@ -118,6 +93,7 @@
         font-size: 2vw;
         margin: 0;
     }
+
     .text {
         position: absolute;
         text-align: left;
@@ -130,7 +106,8 @@
         height: 20%;
         padding-left: 10%;
     }
-    .aboutMeImgText{
+
+    .aboutMeImgText {
         margin: auto;
         translate: 0 90%;
         background: rgba(25, 25, 25, 0.8);
@@ -141,8 +118,11 @@
     }
 
     .aboutImgs {
-        width: 100%;
+        object-fit: cover;
+        height: 15rem;
+        width: 15rem;
     }
+
 
     .elementTitle {
         position: absolute;
@@ -155,64 +135,19 @@
         width: calc(100% - 7rem);
 
     }
+
     .elementImg {
-        width: calc(100% - 100px);
+        width: calc(100% - 50px);
     }
+
     .elementFont {
-         font-size: calc(0.525rem + 1.7vw);
-         font-weight: bolder;
-     }
-/*
-    .elementTwoImgTitle{
-        position: absolute;
-        text-align: center;
-        top: 5%;
-        background: rgba(25, 25, 25, 0.8);
-        font-family: Arial, sans-serif;
-        color: rgba(255, 255, 255, 0.7);
-        width: calc(100% - 4rem);
-    }
-
-    .elementTwoImg{
-        width: calc(100% - 100px);
-    }
-
-
-
-
-
-    .middleElementRight {
-        translate: 215%;
-    }
-
-    .middleElementLeft {
-        translate: -50%;
-    }
-
-    .elementFontTwo {
-        translate: 0;
-        font-size: calc(0.525rem + 2vw);
+        font-size: calc(0.525rem + 1.7vw);
         font-weight: bolder;
     }
-
-    .elementBox {
-        position: relative;
-        padding-top: 2vw;
-    }
-
-    .elementText {
-
-        min-height: calc(100% - 50px);
-        border: .5em solid black;
-        margin: 2em 0;
-        background-color: #FFFFFF;
-    }*/
 }
 
-
-@media screen and (min-width: 768px) and  (max-width: 991px){
-
-    .navbar-lines{
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-lines {
         display: none;
     }
 
@@ -223,15 +158,15 @@
     }
 
     #jumboImg {
-        width: 35vw;
+        width: 15rem;
     }
 
     #jumboTitles {
-        font-size: 2vw;
+        font-size: 1rem;
     }
 
     #jumboName {
-        font-size: 3vw;
+        font-size: 1.5rem;
         margin: 0;
     }
 
@@ -247,7 +182,8 @@
         height: 20%;
         padding-left: 10%;
     }
-    .aboutMeImgText{
+
+    .aboutMeImgText {
         margin: auto;
         translate: 0 90%;
         background: rgba(25, 25, 25, 0.8);
@@ -258,8 +194,11 @@
     }
 
     .aboutImgs {
-        width: 120%;
+        object-fit: cover;
+        height: 13rem;
+        width: 13rem;
     }
+
     .elementTitle {
         position: absolute;
         text-align: center;
@@ -270,60 +209,15 @@
         width: calc(100% - 4rem);
 
     }
+
     .elementImg {
         width: content-box;
     }
+
     .elementFont {
-         font-size: calc(0.525rem + 1.5vw);
-         font-weight: bolder;
-     }
-/*
-    .elementTwoImgTitle{
-        position: absolute;
-        text-align: center;
-        top: 5%;
-        background: rgba(25, 25, 25, 0.8);
-        font-family: Arial, sans-serif;
-        color: rgba(255, 255, 255, 0.7);
-        width: calc(100% - 4rem);
-    }
-
-    .elementTwoImg{
-        width: calc(100% - 100px);
-    }
-
-
-
-
-
-
-    .middleElementRight {
-        translate: 215%;
-    }
-
-    .middleElementLeft {
-        translate: -50%;
-    }
-
-    .elementFontTwo {
-        translate: 0;
-        font-size: calc(0.525rem + 2vw);
+        font-size: calc(0.525rem + 1.5vw);
         font-weight: bolder;
     }
-
-    .elementBox {
-        position: relative;
-        padding-top: 2vw;
-    }
-
-    .elementText {
-
-        min-height: calc(100% - 50px);
-        border: .5em solid black;
-        margin: 2em 0;
-        background-color: #FFFFFF;
-    }
-*/
 }
 
 
@@ -364,7 +258,8 @@
         height: 20%;
         padding-left: 10%;
     }
-    .aboutMeImgText{
+
+    .aboutMeImgText {
         margin: auto;
         translate: 0 90%;
         background: rgba(25, 25, 25, 0.8);
@@ -375,121 +270,9 @@
     }
 
     .aboutImgs {
-        width: 100%;
-    }
-   .elementTitle {
-        position: absolute;
-        text-align: center;
-        top: 15%;
-        background: rgba(25, 25, 25, 0.8);
-        font-family: Arial, sans-serif;
-        color: rgba(255, 255, 255, 0.7);
-        width: calc(100% - 7rem);
-
-    }
-    .elementFont {
-             font-size: calc(0.525rem + 4vw);
-             font-weight: bolder;
-         }
- /*
-    .elementTwoImgTitle{
-        position: absolute;
-        text-align: center;
-        top: 5%;
-        background: rgba(25, 25, 25, 0.8);
-        font-family: Arial, sans-serif;
-        color: rgba(255, 255, 255, 0.7);
-        width: calc(100% - 4rem);
-    }
-
-    .elementTwoImg{
-        width: calc(100% - 100px);
-    }
-
-
-
-
-
-    .middleElementRight {
-        translate: 215%;
-    }
-
-    .middleElementLeft {
-        translate: -50%;
-    }
-
-    .elementFontTwo {
-        translate: 0;
-        font-size: calc(0.525rem + 2vw);
-        font-weight: bolder;
-    }
-
-    .elementBox {
-        position: relative;
-        padding-top: 2vw;
-    }
-
-    .elementText {
-
-        min-height: calc(100% - 50px);
-        border: .5em solid black;
-        margin: 2em 0;
-        background-color: #FFFFFF;
-    }*/
-}
-
-@media screen and (max-width: 575px) {
-
-    .navbar-lines{
-        display: none;
-    }
-    #jumboCardImg {
-        width: 60vw;
-        padding-left: 3%;
-        translate: 0 20%;
-    }
-
-    .aboutImgs {
-        max-width: 80%;
-    }
-
-    #jumboName {
-        font-size: 6vw;
-        margin: 0;
-    }
-    #jumboTitles {
-        font-size: 3vw;
-    }
-    .text {
-        position: absolute;
-        text-align: left;
-        bottom: 0;
-
-        background: rgba(25, 25, 25, 0.8);
-        font-family: Arial, sans-serif;
-        color: #fff;
-        width: 80%;
-        height: 20%;
-        padding-left: 10%;
-    }
-    .aboutCards{
-        margin: 1vw 0;
-    }
-
-    .aboutMeImgText{
-        margin: auto;
-        translate: 0 90%;
-        background: rgba(25, 25, 25, 0.8);
-        font-family: Arial, sans-serif;
-        color: #fff;
-        width: 40vw;
-        font-size: 8vw;
-    }
-
-    .aboutImgs {
-        width: 100%;
-        min-width: 100%;
-        height: 100%;
+        object-fit: cover;
+        height: 10rem;
+        width: 10rem;
     }
 
     .elementTitle {
@@ -502,9 +285,83 @@
         width: calc(100% - 7rem);
 
     }
+
+    .elementFont {
+        font-size: calc(0.525rem + 4vw);
+        font-weight: bolder;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    .navbar-lines {
+        display: none;
+    }
+
+    #jumboCardImg {
+        width: 60vw;
+        padding-left: 3%;
+        translate: 0 20%;
+    }
+
+    .aboutImgs {
+        object-fit: cover;
+        height: 50vw;
+        width: 50vw;
+    }
+
+    #jumboName {
+        font-size: 6vw;
+        margin: 0;
+    }
+
+    #jumboTitles {
+        font-size: 3vw;
+    }
+
+    .text {
+        position: absolute;
+        text-align: left;
+        bottom: 0;
+
+        background: rgba(25, 25, 25, 0.8);
+        font-family: Arial, sans-serif;
+        color: #fff;
+        width: 80%;
+        height: 20%;
+        padding-left: 10%;
+    }
+
+    .aboutCards {
+        margin: 1vw 0;
+    }
+
+    .aboutMeImgText {
+        margin: auto;
+        translate: 0 90%;
+        background: rgba(25, 25, 25, 0.8);
+        font-family: Arial, sans-serif;
+        color: #fff;
+        width: 40vw;
+        font-size: 8vw;
+    }
+
+    .elementTitle {
+        position: absolute;
+        text-align: center;
+        top: 15%;
+        background: rgba(25, 25, 25, 0.8);
+        font-family: Arial, sans-serif;
+        color: rgba(255, 255, 255, 0.7);
+        width: calc(100% - 7rem);
+
+    }
+
     .elementImg {
         width: calc(100% - 100px);
     }
+
     .elementFont {
         font-size: calc(0.525rem + 4vw);
         font-weight: bolder;
@@ -519,9 +376,7 @@
 }
 
 
-
 /*this is the elements from my life*/
-
 
 
 .elementEx {
@@ -545,17 +400,17 @@
 body {
     background-color: bisque;
 }
-.logo{
+
+.logo {
     max-width: 2rem;
 }
-.headline{
+
+.headline {
     font-size: 2rem;
 }
-.elementLogo{
+
+.elementLogo {
     max-width: 1.5rem;
 }
-.aboutImgs{
-    object-fit: cover;
-    height: 14vw;
-    width: 14vw;
-}
+
+
